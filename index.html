@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoamRelax | Book your room now!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="https://www.trivago.in/_static/images/ValueProposition/SaveDesktop.svg" type="image/png">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="/images/logo.png" alt="Logo"></a>
+            <h6><span id="roam">Roam</span><span id="relax"></span>Relax</h6>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="log">
+            <button><a href="login.html">Login/Sign Up</a></button>
+        </div>
+    </div>
+
+    <div class="loc">
+        <div class="search">
+            <div class="dest">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0 0 50 50">
+                    <path
+                        d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z">
+                    </path>
+                </svg>
+                <label for="landmark"><span id="element"></span></label><br>
+                <input type="text" placeholder="Where to?">
+            </div>
+            <div class="inout">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15"
+                    viewBox="0 0 50 50">
+                    <path
+                        d="M113.854 22.323h-9.667v-2.677a7.25 7.25 0 0 0-14.5 0v2.677H38.313v-2.677a7.25 7.25 0 0 0-14.5 0v2.677h-9.667a1.75 1.75 0 0 0-1.75 1.75v89.781a1.751 1.751 0 0 0 1.75 1.75h99.708a1.751 1.751 0 0 0 1.75-1.75V24.073a1.75 1.75 0 0 0-1.75-1.75zm-20.667-2.677a3.75 3.75 0 0 1 7.5 0V28.5a3.75 3.75 0 0 1-7.5 0zm-65.874 0a3.75 3.75 0 0 1 7.5 0V28.5a3.75 3.75 0 0 1-7.5 0zm-3.5 6.177V28.5a7.25 7.25 0 0 0 14.5 0v-2.677h51.374V28.5a7.25 7.25 0 0 0 14.5 0v-2.677h7.913V44.2H15.9V25.823zM15.9 112.1V47.7h96.2v64.4z" />
+                    <path
+                        d="M40.2 56h-8.721a1.749 1.749 0 0 0-1.75 1.75v8.719a1.749 1.749 0 0 0 1.75 1.75H40.2a1.749 1.749 0 0 0 1.75-1.75V57.75A1.749 1.749 0 0 0 40.2 56zm-1.75 8.719h-5.221V59.5h5.218zM58.972 56h-8.719a1.75 1.75 0 0 0-1.75 1.75v8.719a1.75 1.75 0 0 0 1.75 1.75h8.719a1.75 1.75 0 0 0 1.75-1.75V57.75a1.75 1.75 0 0 0-1.75-1.75zm-1.75 8.719H52V59.5h5.219zM77.747 56h-8.719a1.75 1.75 0 0 0-1.75 1.75v8.719a1.75 1.75 0 0 0 1.75 1.75h8.719a1.749 1.749 0 0 0 1.75-1.75V57.75a1.749 1.749 0 0 0-1.75-1.75zM76 64.719h-5.222V59.5H76zM96.521 56H87.8a1.749 1.749 0 0 0-1.75 1.75v8.719a1.749 1.749 0 0 0 1.75 1.75h8.718a1.749 1.749 0 0 0 1.75-1.75V57.75A1.749 1.749 0 0 0 96.521 56zm-1.75 8.719h-5.218V59.5h5.218zM40.2 74h-8.721a1.749 1.749 0 0 0-1.75 1.75v8.719a1.749 1.749 0 0 0 1.75 1.75H40.2a1.749 1.749 0 0 0 1.75-1.75V75.75A1.749 1.749 0 0 0 40.2 74zm-1.75 8.719h-5.221V77.5h5.218zM58.972 74h-8.719a1.75 1.75 0 0 0-1.75 1.75v8.719a1.75 1.75 0 0 0 1.75 1.75h8.719a1.75 1.75 0 0 0 1.75-1.75V75.75a1.75 1.75 0 0 0-1.75-1.75zm-1.75 8.719H52V77.5h5.219zM77.747 74h-8.719a1.75 1.75 0 0 0-1.75 1.75v8.719a1.75 1.75 0 0 0 1.75 1.75h8.719a1.749 1.749 0 0 0 1.75-1.75V75.75a1.749 1.749 0 0 0-1.75-1.75zM76 82.719h-5.222V77.5H76zM96.521 74H87.8a1.749 1.749 0 0 0-1.75 1.75v8.719a1.749 1.749 0 0 0 1.75 1.75h8.718a1.749 1.749 0 0 0 1.75-1.75V75.75A1.749 1.749 0 0 0 96.521 74zm-1.75 8.719h-5.218V77.5h5.218zM40.2 92h-8.721a1.749 1.749 0 0 0-1.75 1.75v8.719a1.749 1.749 0 0 0 1.75 1.75H40.2a1.749 1.749 0 0 0 1.75-1.75V93.75A1.749 1.749 0 0 0 40.2 92zm-1.75 8.719h-5.221V95.5h5.218zM58.972 92h-8.719a1.75 1.75 0 0 0-1.75 1.75v8.719a1.75 1.75 0 0 0 1.75 1.75h8.719a1.75 1.75 0 0 0 1.75-1.75V93.75a1.75 1.75 0 0 0-1.75-1.75zm-1.75 8.719H52V95.5h5.219zM77.747 92h-8.719a1.75 1.75 0 0 0-1.75 1.75v8.719a1.75 1.75 0 0 0 1.75 1.75h8.719a1.749 1.749 0 0 0 1.75-1.75V93.75a1.749 1.749 0 0 0-1.75-1.75zM76 100.719h-5.222V95.5H76zM96.521 92H87.8a1.749 1.749 0 0 0-1.75 1.75v8.719a1.749 1.749 0 0 0 1.75 1.75h8.718a1.749 1.749 0 0 0 1.75-1.75V93.75A1.749 1.749 0 0 0 96.521 92zm-1.75 8.719h-5.218V95.5h5.218z" />
+                </svg>
+                <label for="checkIn">Check-in</label><br>
+                <input type="date">
+            </div>
+            <div class="inout">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15"
+                    viewBox="0 0 50 50">
+                    <path
+                        d="M113.854 22.323h-9.667v-2.677a7.25 7.25 0 0 0-14.5 0v2.677H38.313v-2.677a7.25 7.25 0 0 0-14.5 0v2.677h-9.667a1.75 1.75 0 0 0-1.75 1.75v89.781a1.751 1.751 0 0 0 1.75 1.75h99.708a1.751 1.751 0 0 0 1.75-1.75V24.073a1.75 1.75 0 0 0-1.75-1.75zm-20.667-2.677a3.75 3.75 0 0 1 7.5 0V28.5a3.75 3.75 0 0 1-7.5 0zm-65.874 0a3.75 3.75 0 0 1 7.5 0V28.5a3.75 3.75 0 0 1-7.5 0zm-3.5 6.177V28.5a7.25 7.25 0 0 0 14.5 0v-2.677h51.374V28.5a7.25 7.25 0 0 0 14.5 0v-2.677h7.913V44.2H15.9V25.823zM15.9 112.1V47.7h96.2v64.4z" />
+                    <path
+                        d="M40.2 56h-8.721a1.749 1.749 0 0 0-1.75 1.75v8.719a1.749 1.749 0 0 0 1.75 1.75H40.2a1.749 1.749 0 0 0 1.75-1.75V57.75A1.749 1.749 0 0 0 40.2 56zm-1.75 8.719h-5.221V59.5h5.218zM58.972 56h-8.719a1.75 1.75 0 0 0-1.75 1.75v8.719a1.75 1.75 0 0 0 1.75 1.75h8.719a1.75 1.75 0 0 0 1.75-1.75V57.75a1.75 1.75 0 0 0-1.75-1.75zm-1.75 8.719H52V59.5h5.219zM77.747 56h-8.719a1.75 1.75 0 0 0-1.75 1.75v8.719a1.75 1.75 0 0 0 1.75 1.75h8.719a1.749 1.749 0 0 0 1.75-1.75V57.75a1.749 1.749 0 0 0-1.75-1.75zM76 64.719h-5.222V59.5H76zM96.521 56H87.8a1.749 1.749 0 0 0-1.75 1.75v8.719a1.749 1.749 0 0 0 1.75 1.75h8.718a1.749 1.749 0 0 0 1.75-1.75V57.75A1.749 1.749 0 0 0 96.521 56zm-1.75 8.719h-5.218V59.5h5.218zM40.2 74h-8.721a1.749 1.749 0 0 0-1.75 1.75v8.719a1.749 1.749 0 0 0 1.75 1.75H40.2a1.749 1.749 0 0 0 1.75-1.75V75.75A1.749 1.749 0 0 0 40.2 74zm-1.75 8.719h-5.221V77.5h5.218zM58.972 74h-8.719a1.75 1.75 0 0 0-1.75 1.75v8.719a1.75 1.75 0 0 0 1.75 1.75h8.719a1.75 1.75 0 0 0 1.75-1.75V75.75a1.75 1.75 0 0 0-1.75-1.75zm-1.75 8.719H52V77.5h5.219zM77.747 74h-8.719a1.75 1.75 0 0 0-1.75 1.75v8.719a1.75 1.75 0 0 0 1.75 1.75h8.719a1.749 1.749 0 0 0 1.75-1.75V75.75a1.749 1.749 0 0 0-1.75-1.75zM76 82.719h-5.222V77.5H76zM96.521 74H87.8a1.749 1.749 0 0 0-1.75 1.75v8.719a1.749 1.749 0 0 0 1.75 1.75h8.718a1.749 1.749 0 0 0 1.75-1.75V75.75A1.749 1.749 0 0 0 96.521 74zm-1.75 8.719h-5.218V77.5h5.218zM40.2 92h-8.721a1.749 1.749 0 0 0-1.75 1.75v8.719a1.749 1.749 0 0 0 1.75 1.75H40.2a1.749 1.749 0 0 0 1.75-1.75V93.75A1.749 1.749 0 0 0 40.2 92zm-1.75 8.719h-5.221V95.5h5.218zM58.972 92h-8.719a1.75 1.75 0 0 0-1.75 1.75v8.719a1.75 1.75 0 0 0 1.75 1.75h8.719a1.75 1.75 0 0 0 1.75-1.75V93.75a1.75 1.75 0 0 0-1.75-1.75zm-1.75 8.719H52V95.5h5.219zM77.747 92h-8.719a1.75 1.75 0 0 0-1.75 1.75v8.719a1.75 1.75 0 0 0 1.75 1.75h8.719a1.749 1.749 0 0 0 1.75-1.75V93.75a1.749 1.749 0 0 0-1.75-1.75zM76 100.719h-5.222V95.5H76zM96.521 92H87.8a1.749 1.749 0 0 0-1.75 1.75v8.719a1.749 1.749 0 0 0 1.75 1.75h8.718a1.749 1.749 0 0 0 1.75-1.75V93.75A1.749 1.749 0 0 0 96.521 92zm-1.75 8.719h-5.218V95.5h5.218z" />
+                </svg>
+                <label for="checkIn">Check-out</label><br>
+                <input type="date">
+            </div>
+            <div class="srch">
+                <button><a href="#">Search</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="add">
+        <div class="addLogo">
+            <a href="https://www.oyorooms.com/">
+                <img src="https://imgcy.trivago.com/image/upload/hardcodedimages/mpm-localised-logos-dark/2452.png"></a>
+        </div>
+        <div class="addLogo">
+            <a href="https://in.hotels.com/?locale=en_IN&pos=HCOM_IN&siteid=300000036">
+                <img src="https://imgcy.trivago.com/image/upload/hardcodedimages/mpm-localised-logos-dark/3340.png"></a>
+        </div>
+        <div class="addLogo">
+            <a
+                href="https://www.booking.com/country/in.en.html?aid=1610687;label=in-HvtKIh8HYqxrATaP24vtSgS630406954077:pl:ta:p1:p2:ac:ap:neg:fi:tiaud-1110454565467:kwd-303403359744:lp9299398:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YfpWGnRw6lOGgfEoJVv7zYo;ws=&gad_source=1&gclid=CjwKCAiApaarBhB7EiwAYiMwqjqRX8bXKra-JdA23kShybgHRb3UryNpbVl-E8GAIQZtjhIT_thFTxoC6JUQAvD_BwE">
+                <img src="https://imgcy.trivago.com/image/upload/hardcodedimages/mpm-localised-logos-dark/626.png"></a>
+        </div>
+        <div class="addLogo">
+            <a
+                href="https://www.makemytrip.com/flights/?gclid=CjwKCAiApaarBhB7EiwAYiMwqh6TxA72ys01GX75l69Cz_wW1Aps27dNUjhryKi2bvLVQ7efkuKePRoCyRgQAvD_BwE&cmp=SEM|D|DF|G|Brand|Brand-BrandExact_DT|B_M_Makemytrip_Search_Exact|RSA|673383350836&s_kwcid=AL!1631!3!673383350836!e!!g!!mmt&ef_id=CjwKCAiApaarBhB7EiwAYiMwqh6TxA72ys01GX75l69Cz_wW1Aps27dNUjhryKi2bvLVQ7efkuKePRoCyRgQAvD_BwE:G:s&gad_source=1">
+                <img src="https://imgcy.trivago.com/image/upload/hardcodedimages/mpm-localised-logos-dark/2192.png">
+            </a>
+        </div>
+        <div class="addLogo">
+            <a href="https://uk.trip.com/?locale=en-gb">
+                <img src="https://imgcy.trivago.com/image/upload/hardcodedimages/mpm-localised-logos-dark/634.png">
+            </a>
+        </div>
+    </div>
+
+
+    <div class="adds">
+        <img src="https://i.pinimg.com/564x/6c/88/6a/6c886a58955b62b80b29d29a69432904.jpg" alt="">
+        <h3 id="element2"></h3>
+    </div>
+
+
+    <div class="hotels" id="services">
+        <div class="headline">
+            <h2>Take a dip at these top-rated hotels</h2>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_240,q_auto,w_320//uploadimages/25/01/25012206.jpeg"
+                        alt="">
+                    <div class="hotel-name">Hotel Riu Garoe</div>
+                    <div class="location"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" class="pointer-events-none max-h-full max-w-full">
+                            <path
+                                d="M18 8.23a6 6 0 00-11.9 0A6.49 6.49 0 006 9a5.79 5.79 0 00.38 2.09l4.75 9.4a1 1 0 001.74 0l4.75-9.4A5.79 5.79 0 0018 9a6.49 6.49 0 000-.77zM12 13a4 4 0 114-4 4 4 0 01-4 4z"
+                                fill="currentColor"></path>
+                        </svg>Barcelona</div>
+                    <div class="extra">
+                        <li class="AmenitiesSection_item__sB19R"><span
+                                class="leading-none inline-flex Icon_m__3y0iQ transform AmenitiesSection_icon__WSUCZ"
+                                aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" class="pointer-events-none max-h-full max-w-full">
+                                    <g fill="currentColor">
+                                        <path
+                                            d="M15 14a2 2 0 00-2 2 1 1 0 01-2 0 2 2 0 00-4 0 .5.5 0 001 0 1 1 0 012 0 2 2 0 004 0 1 1 0 012 0 .5.5 0 001 0 2 2 0 00-2-2zM10.5 18.5a.5.5 0 00-.5.5 1 1 0 01-2 0 2 2 0 00-4 0 .5.5 0 001 0 1 1 0 012 0 2 2 0 004 0 .5.5 0 00-.5-.5zM13.5 18.5a.5.5 0 01.5.5 1 1 0 002 0 2 2 0 014 0 .5.5 0 01-1 0 1 1 0 00-2 0 2 2 0 01-4 0 .5.5 0 01.5-.5zM16.5 2A1.5 1.5 0 0015 3.5V7H8V3.5a.5.5 0 011 0v1a.5.5 0 001 0v-1a1.5 1.5 0 00-3 0v9a.5.5 0 001 0V11h7v1.5a.5.5 0 001 0v-9a.5.5 0 011 0v1a.5.5 0 001 0v-1A1.5 1.5 0 0016.5 2zM8 10V8h7v2z">
+                                        </path>
+                                    </g>
+                                </svg></span><span>Pool</span></li>
+                        <li class="AmenitiesSection_item__sB19R"><span
+                                class="leading-none inline-flex Icon_m__3y0iQ transform AmenitiesSection_icon__WSUCZ"
+                                aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" class="pointer-events-none max-h-full max-w-full">
+                                    <g fill="currentColor">
+                                        <path
+                                            d="M12 6.6c1.43 1.87 3 4.33 3 5.4a3 3 0 01-6 0c0-1.07 1.57-3.53 3-5.4M12 5s-4 4.79-4 7a4 4 0 008 0c0-2.21-4-7-4-7z">
+                                        </path>
+                                        <path
+                                            d="M17 12.53a5.23 5.23 0 01-.21 1C19.43 14.12 21 15.18 21 16c0 1.22-3.51 3-9 3s-9-1.78-9-3c0-.82 1.57-1.88 4.26-2.5a5.23 5.23 0 01-.21-1c-3 .69-5 2-5 3.47 0 2.21 4.48 4 10 4s10-1.79 10-4C22 14.51 20 13.22 17 12.53z">
+                                        </path>
+                                        <path
+                                            d="M17.83 16c-.67.42-2.69 1-5.83 1s-5.16-.58-5.83-1a6.79 6.79 0 012.12-.68 5.1 5.1 0 01-.63-.89C6 14.8 5 15.36 5 16c0 1.1 3.13 2 7 2s7-.9 7-2c0-.64-1-1.2-2.66-1.57a5.1 5.1 0 01-.63.89 6.79 6.79 0 012.12.68z">
+                                        </path>
+                                    </g>
+                                </svg></span><span>Spa</span></li>
+                    </div>
+                    <a href="confirm.html" class="button">Book Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/partnerimages/16/74/1674349190.jpeg"
+                        alt="">
+                    <div class="hotel-name">Helios Benidorm</div>
+                    <div class="location"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" class="pointer-events-none max-h-full max-w-full">
+                            <path
+                                d="M18 8.23a6 6 0 00-11.9 0A6.49 6.49 0 006 9a5.79 5.79 0 00.38 2.09l4.75 9.4a1 1 0 001.74 0l4.75-9.4A5.79 5.79 0 0018 9a6.49 6.49 0 000-.77zM12 13a4 4 0 114-4 4 4 0 01-4 4z"
+                                fill="currentColor"></path>
+                        </svg>Benidorme</div>
+                    <div class="extra">
+                        <li class="AmenitiesSection_item__sB19R"><span
+                                class="leading-none inline-flex Icon_m__3y0iQ transform AmenitiesSection_icon__WSUCZ"
+                                aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" class="pointer-events-none max-h-full max-w-full">
+                                    <g fill="currentColor">
+                                        <path
+                                            d="M15 14a2 2 0 00-2 2 1 1 0 01-2 0 2 2 0 00-4 0 .5.5 0 001 0 1 1 0 012 0 2 2 0 004 0 1 1 0 012 0 .5.5 0 001 0 2 2 0 00-2-2zM10.5 18.5a.5.5 0 00-.5.5 1 1 0 01-2 0 2 2 0 00-4 0 .5.5 0 001 0 1 1 0 012 0 2 2 0 004 0 .5.5 0 00-.5-.5zM13.5 18.5a.5.5 0 01.5.5 1 1 0 002 0 2 2 0 014 0 .5.5 0 01-1 0 1 1 0 00-2 0 2 2 0 01-4 0 .5.5 0 01.5-.5zM16.5 2A1.5 1.5 0 0015 3.5V7H8V3.5a.5.5 0 011 0v1a.5.5 0 001 0v-1a1.5 1.5 0 00-3 0v9a.5.5 0 001 0V11h7v1.5a.5.5 0 001 0v-9a.5.5 0 011 0v1a.5.5 0 001 0v-1A1.5 1.5 0 0016.5 2zM8 10V8h7v2z">
+                                        </path>
+                                    </g>
+                                </svg></span><span>Pool</span></li>
+                        <li class="AmenitiesSection_item__sB19R"><span
+                                class="leading-none inline-flex Icon_m__3y0iQ transform AmenitiesSection_icon__WSUCZ"
+                                aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" class="pointer-events-none max-h-full max-w-full">
+                                    <g fill="currentColor">
+                                        <path
+                                            d="M12 6.6c1.43 1.87 3 4.33 3 5.4a3 3 0 01-6 0c0-1.07 1.57-3.53 3-5.4M12 5s-4 4.79-4 7a4 4 0 008 0c0-2.21-4-7-4-7z">
+                                        </path>
+                                        <path
+                                            d="M17 12.53a5.23 5.23 0 01-.21 1C19.43 14.12 21 15.18 21 16c0 1.22-3.51 3-9 3s-9-1.78-9-3c0-.82 1.57-1.88 4.26-2.5a5.23 5.23 0 01-.21-1c-3 .69-5 2-5 3.47 0 2.21 4.48 4 10 4s10-1.79 10-4C22 14.51 20 13.22 17 12.53z">
+                                        </path>
+                                        <path
+                                            d="M17.83 16c-.67.42-2.69 1-5.83 1s-5.16-.58-5.83-1a6.79 6.79 0 012.12-.68 5.1 5.1 0 01-.63-.89C6 14.8 5 15.36 5 16c0 1.1 3.13 2 7 2s7-.9 7-2c0-.64-1-1.2-2.66-1.57a5.1 5.1 0 01-.63.89 6.79 6.79 0 012.12.68z">
+                                        </path>
+                                    </g>
+                                </svg></span><span>Spa</span></li>
+                    </div>
+                    <a href="confirm.html" class="button">Book Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_240,q_auto,w_320//uploadimages/47/25/47258172.jpeg"
+                        alt="">
+                    <div class="hotel-name">Yurrban Passage Hotel</div>
+                    <div class="location"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" class="pointer-events-none max-h-full max-w-full">
+                            <path
+                                d="M18 8.23a6 6 0 00-11.9 0A6.49 6.49 0 006 9a5.79 5.79 0 00.38 2.09l4.75 9.4a1 1 0 001.74 0l4.75-9.4A5.79 5.79 0 0018 9a6.49 6.49 0 000-.77zM12 13a4 4 0 114-4 4 4 0 01-4 4z"
+                                fill="currentColor"></path>
+                        </svg>Madrid</div>
+                    <div class="extra">
+                        <li class="AmenitiesSection_item__sB19R"><span
+                                class="leading-none inline-flex Icon_m__3y0iQ transform AmenitiesSection_icon__WSUCZ"
+                                aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" class="pointer-events-none max-h-full max-w-full">
+                                    <g fill="currentColor">
+                                        <path
+                                            d="M15 14a2 2 0 00-2 2 1 1 0 01-2 0 2 2 0 00-4 0 .5.5 0 001 0 1 1 0 012 0 2 2 0 004 0 1 1 0 012 0 .5.5 0 001 0 2 2 0 00-2-2zM10.5 18.5a.5.5 0 00-.5.5 1 1 0 01-2 0 2 2 0 00-4 0 .5.5 0 001 0 1 1 0 012 0 2 2 0 004 0 .5.5 0 00-.5-.5zM13.5 18.5a.5.5 0 01.5.5 1 1 0 002 0 2 2 0 014 0 .5.5 0 01-1 0 1 1 0 00-2 0 2 2 0 01-4 0 .5.5 0 01.5-.5zM16.5 2A1.5 1.5 0 0015 3.5V7H8V3.5a.5.5 0 011 0v1a.5.5 0 001 0v-1a1.5 1.5 0 00-3 0v9a.5.5 0 001 0V11h7v1.5a.5.5 0 001 0v-9a.5.5 0 011 0v1a.5.5 0 001 0v-1A1.5 1.5 0 0016.5 2zM8 10V8h7v2z">
+                                        </path>
+                                    </g>
+                                </svg></span><span>Pool</span></li>
+                    </div>
+                    <a href="confirm.html" class="button">Book Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_240,q_auto,w_320//partnerimages/16/61/1661362070.jpeg"
+                        alt="">
+                    <div class="hotel-name">Marbella Club Hotel</div>
+                    <div class="location"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" class="pointer-events-none max-h-full max-w-full">
+                            <path
+                                d="M18 8.23a6 6 0 00-11.9 0A6.49 6.49 0 006 9a5.79 5.79 0 00.38 2.09l4.75 9.4a1 1 0 001.74 0l4.75-9.4A5.79 5.79 0 0018 9a6.49 6.49 0 000-.77zM12 13a4 4 0 114-4 4 4 0 01-4 4z"
+                                fill="currentColor"></path>
+                        </svg>Marbella</div>
+                    <div class="extra">
+                        <li class="AmenitiesSection_item__sB19R"><span
+                                class="leading-none inline-flex Icon_m__3y0iQ transform AmenitiesSection_icon__WSUCZ"
+                                aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" class="pointer-events-none max-h-full max-w-full">
+                                    <g fill="currentColor">
+                                        <path
+                                            d="M15 14a2 2 0 00-2 2 1 1 0 01-2 0 2 2 0 00-4 0 .5.5 0 001 0 1 1 0 012 0 2 2 0 004 0 1 1 0 012 0 .5.5 0 001 0 2 2 0 00-2-2zM10.5 18.5a.5.5 0 00-.5.5 1 1 0 01-2 0 2 2 0 00-4 0 .5.5 0 001 0 1 1 0 012 0 2 2 0 004 0 .5.5 0 00-.5-.5zM13.5 18.5a.5.5 0 01.5.5 1 1 0 002 0 2 2 0 014 0 .5.5 0 01-1 0 1 1 0 00-2 0 2 2 0 01-4 0 .5.5 0 01.5-.5zM16.5 2A1.5 1.5 0 0015 3.5V7H8V3.5a.5.5 0 011 0v1a.5.5 0 001 0v-1a1.5 1.5 0 00-3 0v9a.5.5 0 001 0V11h7v1.5a.5.5 0 001 0v-9a.5.5 0 011 0v1a.5.5 0 001 0v-1A1.5 1.5 0 0016.5 2zM8 10V8h7v2z">
+                                        </path>
+                                    </g>
+                                </svg></span><span>Pool</span></li>
+                    </div>
+                    <a href="confirm.html" class="button">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hotels1">
+        <div class="headline">
+            <h2>Popular searches</h2>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/categoryimages/64/98/64981_v33.jpeg"
+                        alt="">
+                    <span>
+                        <div class="hotel-name">Mumbai</div>
+                    </span>
+                    <div class="location"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" class="pointer-events-none max-h-full max-w-full">
+                            <path
+                                d="M18 8.23a6 6 0 00-11.9 0A6.49 6.49 0 006 9a5.79 5.79 0 00.38 2.09l4.75 9.4a1 1 0 001.74 0l4.75-9.4A5.79 5.79 0 0018 9a6.49 6.49 0 000-.77zM12 13a4 4 0 114-4 4 4 0 01-4 4z"
+                                fill="currentColor"></path>
+                        </svg>India</div>
+                    <div class="extra">
+                        <div class="hot">
+                            <h4>5038 Hotels</h4>
+                        </div>
+                    </div>
+                    <div class="extra">
+                        <div class="avg">
+                            <span id="avg">
+                                <h4>Avg. Rs.3853</h4>
+                            </span>
+                        </div>
+                    </div>
+                    <a href="mumbai.html" class="button">View More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://ashwinishenoy.com/wp-content/uploads/2022/03/EOkux2BUUAAYdgc.jpg" alt="">
+                    <span>
+                        <div class="hotel-name">Mangalore</div>
+                    </span>
+                    <div class="location"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" class="pointer-events-none max-h-full max-w-full">
+                            <path
+                                d="M18 8.23a6 6 0 00-11.9 0A6.49 6.49 0 006 9a5.79 5.79 0 00.38 2.09l4.75 9.4a1 1 0 001.74 0l4.75-9.4A5.79 5.79 0 0018 9a6.49 6.49 0 000-.77zM12 13a4 4 0 114-4 4 4 0 01-4 4z"
+                                fill="currentColor"></path>
+                        </svg>India</div>
+                    <div class="extra">
+                        <div class="hot">
+                            <h4>1146 Hotels</h4>
+                        </div>
+                    </div>
+                    <div class="extra">
+                        <div class="avg">
+                            <span id="avg">
+                                <h4>Avg. Rs.3667</h4>
+                            </span>
+                        </div>
+                    </div>
+                    <a href="mangalore.html" class="button">View More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://static.toiimg.com/photo/54559212.cms" alt="">
+                    <span>
+                        <div class="hotel-name">Bangalore</div>
+                    </span>
+                    <div class="location"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" class="pointer-events-none max-h-full max-w-full">
+                            <path
+                                d="M18 8.23a6 6 0 00-11.9 0A6.49 6.49 0 006 9a5.79 5.79 0 00.38 2.09l4.75 9.4a1 1 0 001.74 0l4.75-9.4A5.79 5.79 0 0018 9a6.49 6.49 0 000-.77zM12 13a4 4 0 114-4 4 4 0 01-4 4z"
+                                fill="currentColor"></path>
+                        </svg>India</div>
+                    <div class="extra">
+                        <div class="hot">
+                            <h4>4989 Hotels</h4>
+                        </div>
+                    </div>
+                    <div class="extra">
+                        <div class="avg">
+                            <span id="avg">
+                                <h4>Avg. Rs.4038</h4>
+                            </span>
+                        </div>
+                    </div>
+                    <a href="bangalore.html" class="button">View More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://twinsontoes.com/wp-content/uploads/kaup-lighthouse-585x329.jpg?v=1691502949"
+                        alt="">
+                    <span>
+                        <div class="hotel-name">UDUPI</div>
+                    </span>
+                    <div class="location"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" class="pointer-events-none max-h-full max-w-full">
+                            <path
+                                d="M18 8.23a6 6 0 00-11.9 0A6.49 6.49 0 006 9a5.79 5.79 0 00.38 2.09l4.75 9.4a1 1 0 001.74 0l4.75-9.4A5.79 5.79 0 0018 9a6.49 6.49 0 000-.77zM12 13a4 4 0 114-4 4 4 0 01-4 4z"
+                                fill="currentColor"></path>
+                        </svg>India</div>
+                    <div class="extra">
+                        <div class="hot">
+                            <h4>978 Hotels</h4>
+                        </div>
+                    </div>
+                    <div class="extra">
+                        <div class="avg">
+                            <span id="avg">
+                                <h4>Avg. Rs.2054</h4>
+                            </span>
+                        </div>
+                    </div>
+                    <a href="udupi.html" class="button">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="addons">
+        <div class="simple">
+            <div class="add_img">
+                <img src="https://www.trivago.in/_static/images/ValueProposition/SearchDesktop.svg" alt="">
+            </div>
+            <div class="Value">
+                <h3 class="text-heading-s font-bold ValueProposition_heading__FoB8J">Search simply</h3>
+                <p>Search through 5 million hotels <br>in just a few seconds.</p>
+            </div>
+        </div>
+        <div class="simple">
+            <div class="add_img">
+                <img src="https://www.trivago.in/_static/images/ValueProposition/CompareDesktop.svg" alt="">
+            </div>
+            <div class="Value">
+                <h3 class="text-heading-s font-bold ValueProposition_heading__FoB8J">Compare confidently</h3>
+                <p>Compare hotel prices from 100s <br> of sites at once.</p>
+            </div>
+        </div>
+        <div class="simple">
+            <div class="add_img">
+                <img src="https://www.trivago.in/_static/images/ValueProposition/SaveDesktop.svg" alt="">
+            </div>
+            <div class="Value">
+                <h3 class="text-heading-s font-bold ValueProposition_heading__FoB8J">Save big</h3>
+                <p>Discover a great deal to book on <br> our partner sites.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <!-- <h4>Products</h4> -->
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Investors relation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <!-- <h4>Services</h4> -->
+                    <ul>
+                        <li><a href="#">Mobile apps</a></li>
+                        <li><a href="#">RoamRelax Business Studio</a></li>
+                        <li><a href="#">Installations</a></li>
+                        <li><a href="#">Testing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <!-- <h4>Help Yourself</h4> -->
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Download Brochures</a></li>
+                        <li><a href="#">Check Prices</a></li>
+                        <li><a href="#">Legal iinformation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <p>
+                            RoamRelax
+                            <br>
+                            #1243, Shri Hari complex, Mallikatte, Mangalore, Karnataka
+                            <br>
+                            +91-124-4987 400
+                            <br>
+                            www.roamrelax.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Landmark', 'Destination', 'Hotel'],
+            typeSpeed: 70,
+            loop: true,
+        });
+        var typed = new Typed('#element2', {
+            strings: ['<i>Discover the best time to book your next stay</i>'],
+            typeSpeed: 40,
+            loop: true,
+        });
+    </script>
+</body>
+</body>
+
+</html>
